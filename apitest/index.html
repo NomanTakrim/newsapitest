@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+
+    <title>World News!</title>
+</head>
+
+<body onload="myNews()">
+    <div class="row">
+        <div class="container">
+            <select id="newspaper" class="form-control" onchange="myNews()">
+
+                <option value="bbc-news">BBC News</option>
+                <option value="al-jazeera-english">Al Jazeera</option>
+                <option value="bloomberg">Bloomberg</option>
+                <option value="cnn">CNN</option>
+            </select>
+        </div>
+    </div>
+    <div class="container">
+        <h3 id='heading'></h3>
+        <div id="box" class="row"></div>
+    </div>
+
+    
+</body>
+<script src="index.js"></script>
+
+</html>
